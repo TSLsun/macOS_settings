@@ -7,9 +7,12 @@ macOS 套件的管理工具
 ``
 
 ## Step 2: install cask
-cask 用來安裝應用程式
+用 `brew cask` 來安裝應用程式要先執行:
+`brew install cask` or 
+`brew tap caskroom/cask`
 
-`brew install cask`
+用 homebrew 安裝字型要先執行：
+`brew tap caskroom/fonts`
 
 ## Step 3: install git
 
@@ -19,3 +22,4 @@ cask 用來安裝應用程式
 
 ## Step 4: install vim tmux zsh
 `brew install vim tmux zsh`
+
