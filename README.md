@@ -23,3 +23,34 @@ macOS 套件的管理工具
 ## Step 4: install vim tmux zsh
 `brew install vim tmux zsh`
 
+## Step 5: install powerline
+```
+pip install powerline-status
+```
+
+.bash_profile 設定加入(python路徑可能不一樣)：
+```
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /usr/local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+``` 
+my settings:
+```
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /anaconda3/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+```
+font settings:
+```
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+```
+再去terminal設定那邊更改字型
