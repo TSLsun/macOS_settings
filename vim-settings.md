@@ -30,9 +30,10 @@ https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-N
 
 >* (2) [YouCompleteMe](http://valloric.github.io/YouCompleteMe/#mac-os-x)         
 
->>>```
-Install CMake
-```
+>>>
+>```
+>Install CMake
+>```
 
 >* (3) [nerdtree](https://github.com/scrooloose/nerdtree)
 
