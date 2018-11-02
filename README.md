@@ -23,13 +23,15 @@ macOS 套件的管理工具
 ## Step 4: install vim, tmux, zsh
 `brew install vim tmux zsh`
 
-##Install iTerm2, wget:
+## Install iTerm2, wget:
 
 `brew cask install iterm2`
 
 `brew install wget`
 
 ## Step 5: install powerline
+
+5.1. Install powerline-status 
 ```
 pip install powerline-status
 ```
@@ -48,7 +50,8 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /anaconda3/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 ```
-font settings:
+
+5.2. font settings:
 ```
 # clone
 git clone https://github.com/powerline/fonts.git --depth=1
@@ -60,3 +63,32 @@ cd ..
 rm -rf fonts
 ```
 再去terminal設定那邊更改字型
+
+5.3. To show gitstatus: [ref](https://medium.freecodecamp.org/jazz-up-your-bash-terminal-a-step-by-step-guide-with-pictures-80267554cb22)
+
+```
+pip install powerline-gitstatus
+```
+my powerline-install-directory:
+```
+/anaconda3/lib/python3.6/site-packages/
+```
+
+add some lines into:
+```
+${powerline-install-directory}/powerline/config_files/colorschemes/shell/default.json
+```
+	
+add the following lines into`
+${powerline-install-directory}/powerline/config_files/themes/shell/default.json`:
+
+```
+{
+    "function": "powerline_gitstatus.gitstatus",
+    "priority": 40
+}
+```
+
+after edit above, save the file and run the following: 
+
+`powerline-daemon —-replace` in the Terminal.
