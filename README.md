@@ -92,3 +92,12 @@ ${powerline-install-directory}/powerline/config_files/themes/shell/default.json`
 after edit above, save the file and run the following: 
 
 `powerline-daemon —-replace` in the Terminal.
+
+5.4. vim settings:
+
+add follow lines to .vimrc:
+```
+set rtp+={powerline-install-directory}/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
+```
