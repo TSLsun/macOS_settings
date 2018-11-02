@@ -20,8 +20,14 @@ macOS 套件的管理工具
 
 [將預設 Git 改為 Homebrew 版本](https://garynil.tw/2018/05/762/%E5%A6%82%E4%BD%95%E4%BB%A5-homebrew-%E5%8F%96%E4%BB%A3-macos-%E5%85%A7%E5%BB%BA-git-%E4%B8%A6%E6%9B%B4%E6%96%B0/)
 
-## Step 4: install vim tmux zsh
+## Step 4: install vim, tmux, zsh
 `brew install vim tmux zsh`
+
+##Install iTerm2, wget:
+
+`brew cask install iterm2`
+
+`brew install wget`
 
 ## Step 5: install powerline
 ```
