@@ -23,11 +23,17 @@ https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-N
 
 * plugins:
 
->* (1) vundle https://github.com/VundleVim/Vundle.vim 
+>* (1) [vundle](https://github.com/VundleVim/Vundle.vim)
 
->* (2) YouCompleteMe http://valloric.github.io/YouCompleteMe/#mac-os-x         
+> `:PluginInstall`
 
->>```
-:PluginInstall
+
+>* (2) [YouCompleteMe](http://valloric.github.io/YouCompleteMe/#mac-os-x)         
+
+>>>```
 Install CMake
 ```
+
+>* (3) [nerdtree](https://github.com/scrooloose/nerdtree)
+
+>* (4) [surround.vim](https://github.com/tpope/vim-surround)
