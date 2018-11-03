@@ -1,10 +1,15 @@
-# macOS 
+# macOS environment setup
+
+[some issue solution]()
+
 ## Step 1: install Homebrew
 macOS 套件的管理工具
 
-``
+`xcode-select --install`
+
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-``
+```
 
 ## Step 2: install cask
 用 `brew cask` 來安裝應用程式要先執行:
@@ -23,13 +28,38 @@ macOS 套件的管理工具
 ## Step 4: install vim, tmux, zsh
 `brew install vim tmux zsh`
 
+[my vim-setup](https://github.com/TSLsun/macOS_settings/blob/master/vim-setup.md)
+
+install oh-my-zsh:
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
 ## Install iTerm2, wget:
 
 `brew cask install iterm2`
 
 `brew install wget`
 
+iTerm2 setup color: [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/schemes)
+
+eg. download Tomorrow-Night-Bright (save at projects/iTerm2-Color-Schemes/schemes/): 
+```
+wget -O  "Tomorrow Night Bright.itermcolors" https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Tomorrow%20Night%20Bright.itermcolors
+```
+then import it.
+
+Set zsh to be iTerm2 default shell:
+
+a. Go to iTerm2 preferences.
+
+b. Head to Profiles -> General.
+
+c. Paste /bin/zsh in the Command textbox and restart iTerm2. 
+
 ## Step 5: install powerline
+
+powerline是一個python套件
 
 5.1. Install powerline-status 
 ```
@@ -51,7 +81,7 @@ POWERLINE_BASH_SELECT=1
 . /anaconda3/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 ```
 
-5.2. font settings:
+5.2. font setup:
 ```
 # clone
 git clone https://github.com/powerline/fonts.git --depth=1
@@ -93,7 +123,7 @@ after edit above, save the file and run the following:
 
 `powerline-daemon —-replace` in the Terminal.
 
-5.4. vim settings:
+5.4. vim setup:
 
 add follow lines to .vimrc:
 ```
