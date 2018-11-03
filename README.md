@@ -1,6 +1,6 @@
 # macOS environment setup
 
-[some issue solution](https://github.com/TSLsun/macOS_settings/blob/master/issue-sol.md)
+[some issues & solution](https://github.com/TSLsun/macOS_settings/blob/master/issue-sol.md)
 
 ## Step 1: install Homebrew
 macOS 套件的管理工具
