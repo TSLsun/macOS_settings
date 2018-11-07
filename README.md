@@ -124,9 +124,23 @@ after edit above, save the file and run the following:
 
 5.4. vim setup:
 
-add follow lines to .vimrc:
+add follow lines to `.vimrc`:
 ```
 set rtp+={powerline-install-directory}/powerline/bindings/vim/
 set laststatus=2
 set t_Co=256
+```
+
+5.5. tmux setup:
+
+add follow line to `.tmux.conf`:
+```
+source '{powerline-install-directory}/powerline/bindings/tmux/powerline.conf'
+```
+
+5.6. zsh setup:
+
+add follow line to `.zshrc`:
+```
+{powerline-install-directory}/powerline/bindings/zsh/powerline.zsh
 ```
