@@ -28,12 +28,9 @@ macOS 套件的管理工具
 ## Step 4: install vim, tmux, zsh
 `brew install vim tmux zsh`
 
-[my vim-setup](https://github.com/TSLsun/macOS_settings/blob/master/vim-setup.md)
+[My vim-setup](https://github.com/TSLsun/macOS_settings/blob/master/vim-setup.md)
 
-install oh-my-zsh:
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
+[My zsh-setup](https://github.com/TSLsun/macOS_settings/blob/master/zsh-setup.md)
 
 ## Install iTerm2, wget:
 
