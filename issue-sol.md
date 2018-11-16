@@ -25,3 +25,9 @@ Comment line 279 in `/System/Library/Frameworks/Python.framework/Versions/2.7/li
 ```
 
 PS: The `__init__.py` file is system read-only file, and you need to run command `csrutil disable` in mac recovery mode (press `command+R` when booting up)
+
+### 2. powerline on zsh broke after using for a while 
+
+Not yet figure out a proper solution...
+
+However, restart the computer can fix it.
