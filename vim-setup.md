@@ -37,4 +37,6 @@ https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-N
 
 >* (3) [nerdtree](https://github.com/scrooloose/nerdtree)
 
->* (4) [surround.vim](https://github.com/tpope/vim-surround)
+>* (4) [nerdcomment](https://github.com/scrooloose/nerdcommenter)
+
+>* (5) [surround.vim](https://github.com/tpope/vim-surround)
