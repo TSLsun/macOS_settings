@@ -37,6 +37,12 @@ https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-N
 
 >* (3) [nerdtree](https://github.com/scrooloose/nerdtree)
 
->* (4) [nerdcomment](https://github.com/scrooloose/nerdcommenter)
+>* (4) [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
 
 >* (5) [surround.vim](https://github.com/tpope/vim-surround)
+
+>* (6) [fzf](https://github.com/junegunn/fzf)
+
+>* (7) [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+
+>* (8) [fugitive](https://github.com/tpope/vim-fugitive)
