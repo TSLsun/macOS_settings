@@ -15,12 +15,11 @@ wget -O .vim/colors/Tomorrow-Night-Bright.vim https://raw.githubusercontent.com/
 
 ## .vim/colors/...
 
-[Tomorrow-Night-Bright.vim](
-https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Bright.vim)
+[Tomorrow-Night-Bright.vim](https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Bright.vim)
 
 ## Plugins:
 
-#### 1. [vundle](https://github.com/VundleVim/Vundle.vim) ** as plugin manger**
+#### 1. [vundle](https://github.com/VundleVim/Vundle.vim) as plugin manger
 
 Set up vundle:
 ```
@@ -31,7 +30,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 run `:PluginInstall` to install plugins
 
-#### 2. [YouCompleteMe](http://valloric.github.io/YouCompleteMe/#mac-os-x)      ** for code autocompletion **
+#### 2. [YouCompleteMe](http://valloric.github.io/YouCompleteMe/#mac-os-x) for code autocompletion 
 
 Install CMake
 
@@ -50,7 +49,7 @@ let g:ycm_server_log_level = 'debug'
 let g:ycm_path_to_python_interpreter = '/anaconda3/bin/python'
 ```
 
-#### 3. [fzf](https://github.com/junegunn/fzf)
+#### 3. [fzf](https://github.com/junegunn/fzf) look for files to open
 
 `:FZF` look for files under current folder
 
@@ -58,9 +57,9 @@ let g:ycm_path_to_python_interpreter = '/anaconda3/bin/python'
 
 `:FZF!` starts fzf in fullscreen mode
 
-`Ctrl-T`,`Ctrl-X`,`Ctrl-V` to open files in new tabs, horizontal splits or in vertical splits.
+`Ctrl-T`, `Ctrl-X`, `Ctrl-V` to open files in new tabs, horizontal splits or in vertical splits.
 
-#### 4. [nerdtree](https://github.com/scrooloose/nerdtree)  ** a tree explorer plugin for vim **
+#### 4. [nerdtree](https://github.com/scrooloose/nerdtree) a tree explorer plugin for vim
 
 Setup in .vimrc:
 ```
@@ -71,7 +70,7 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 ```
 
-#### 5. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) ** make comments **
+#### 5. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) make comments easier
 
 `[count]<leader>c<space>` NERDComToggleComment
 
@@ -79,7 +78,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 `<leader>cA` Add comment at the end of the line
 
-#### 6. [surround.vim](https://github.com/tpope/vim-surround) **to  deal with surroundings **
+#### 6. [surround.vim](https://github.com/tpope/vim-surround) to deal with surroundings
 
 `cs"'` change surroundings from `"` to `'`
 
@@ -87,24 +86,24 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 `ds{` delete surroundings `{}` 
 
-#### 7. [repeat.vim](https://github.com/tpope/vim-repeat)** repeat `.` works for surround.vim **
+#### 7. [repeat.vim](https://github.com/tpope/vim-repeat) `.` works for surround.vim
 
 #### 8. Plugins for Markdown support and preview:
 
-** [tabular](https://github.com/godlygeek/tabular) **
+[tabular](https://github.com/godlygeek/tabular)
 
-** [vim-markdown](https://github.com/plasticboy/vim-markdown) **
+[vim-markdown](https://github.com/plasticboy/vim-markdown)
 
-** [markdown-preview](https://github.com/iamcco/markdown-preview.vim) **
+[markdown-preview](https://github.com/iamcco/markdown-preview.vim)
 
 
 
 ---
 #### To try list:
 
-##### [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 
-##### [tagbar](https://github.com/majutsushi/tagbar)
+[tagbar](https://github.com/majutsushi/tagbar)
 
-##### [fugitive](https://github.com/tpope/vim-fugitive)
+[fugitive](https://github.com/tpope/vim-fugitive)
 
