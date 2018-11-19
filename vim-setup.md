@@ -38,7 +38,7 @@ Compiling YCM with semantic support for C-family languages:
 
 ```
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-completer
+/usr/local/Cellar/python/3.7.1/bin/python3 ./install.py --clang-completer
 ```
 
 Setup in .vimrc:
@@ -46,7 +46,14 @@ Setup in .vimrc:
 " YouCompleteMe settings"
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
-let g:ycm_path_to_python_interpreter = '/anaconda3/bin/python'
+let g:ycm_path_to_python_interpreter='/usr/local/Cellar/python/3.7.1/bin/python3'
+
+" add anaconda3 envs, remember to `source activate envs`"
+let g:ycm_python_binary_path = '/anaconda3/bin/python3'
+let g:ycm_python_binary_path = '/anaconda3/envs/DataScience/bin/python3'
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
+let g:ycm_autoclose_preview_window_after_completion = 1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ```
 
 #### 3. [fzf](https://github.com/junegunn/fzf) look for files to open
