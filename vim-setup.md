@@ -75,6 +75,9 @@ map <C-n> :NERDTreeToggle<CR>
 
 "close vim if NERDTree left open"
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"fix to show first letter"
+let NERDTreeNodeDelimiter = "\t"
 ```
 
 #### 5. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) make comments easier
