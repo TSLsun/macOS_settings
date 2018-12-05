@@ -98,7 +98,9 @@ let NERDTreeNodeDelimiter = "\t"
 
 #### 7. [repeat.vim](https://github.com/tpope/vim-repeat) `.` works for surround.vim
 
-#### 8. Plugins for Markdown support and preview:
+#### 8. [indentLine](https://github.com/Yggdroot/indentLine) `.` to show indentLine
+
+#### 9. Plugins for Markdown support and preview:
 
 [tabular](https://github.com/godlygeek/tabular)
 
