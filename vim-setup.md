@@ -79,8 +79,19 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "fix to show first letter"
 let NERDTreeNodeDelimiter = "\t"
 ```
+#### 5. [tagbar]( https://github.com/majutsushi/tagbar) show tags
 
-#### 5. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) make comments easier
+Install exuberant ctags
+`brew install ctags-exuberant`
+
+```
+" tagbar settings"
+" need to installed ctags
+let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+nmap <F8> :TagbarToggle<CR>
+```
+
+#### 6. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) make comments easier
 
 `[count]<leader>c<space>` NERDComToggleComment
 
@@ -88,7 +99,7 @@ let NERDTreeNodeDelimiter = "\t"
 
 `<leader>cA` Add comment at the end of the line
 
-#### 6. [surround.vim](https://github.com/tpope/vim-surround) to deal with surroundings
+#### 7. [surround.vim](https://github.com/tpope/vim-surround) to deal with surroundings
 
 `cs"'` change surroundings from `"` to `'`
 
@@ -96,11 +107,11 @@ let NERDTreeNodeDelimiter = "\t"
 
 `ds{` delete surroundings `{}` 
 
-#### 7. [repeat.vim](https://github.com/tpope/vim-repeat) `.` works for surround.vim
+#### 8. [repeat.vim](https://github.com/tpope/vim-repeat) `.` works for surround.vim
 
-#### 8. [indentLine](https://github.com/Yggdroot/indentLine) `.` to show indentLine
+#### 9. [indentLine](https://github.com/Yggdroot/indentLine) `.` to show indentLine
 
-#### 9. Plugins for Markdown support and preview:
+#### 10. Plugins for Markdown support and preview:
 
 [tabular](https://github.com/godlygeek/tabular)
 
@@ -114,8 +125,6 @@ let NERDTreeNodeDelimiter = "\t"
 #### To try list:
 
 [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
-
-[tagbar](https://github.com/majutsushi/tagbar)
 
 [fugitive](https://github.com/tpope/vim-fugitive)
 
