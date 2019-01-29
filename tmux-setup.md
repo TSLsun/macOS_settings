@@ -26,3 +26,10 @@ bind - split-window -v
 ```
 
 ## 3. tmux theme setup
+
+# issue
+
+## tmux disregarding the configuration file
+
+sol: make sure all the tmux windows are closed
+[ref](https://superuser.com/questions/188491/tmux-disregarding-the-configuration-file)
