@@ -35,7 +35,7 @@ macOS 套件的管理工具
 
 [My vim setup](https://github.com/TSLsun/macOS_settings/blob/master/vim-setup.md)
 
-[My zsh setup](https://github.com/TSLsun/macOS_settings/blob/master/zsh-setup.md)
+[My zsh setup](https://github.com/TSLsun/macOS_settings/blob/master/zsh-setup-antigen.md)
 
 ## Install iTerm2, wget
 
