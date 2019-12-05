@@ -1,12 +1,12 @@
 # some issues and solutions
 
-### 1. MemoryError when executing vi after update macOS to Mojave 10.14 & 10.14.1, thus powerline will not work
+## 1. MemoryError when executing vi after update macOS to Mojave 10.14 & 10.14.1, thus powerline will not work
 
 [solution ref](https://github.com/powerline/powerline/issues/1947#issuecomment-431784358)
 
 Comment line 279 in `/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ctypes/__init__.py`
 
-```
+```python
 265 def _reset_cache():
 266     _pointer_type_cache.clear()
 267     _c_functype_cache.clear()
@@ -26,7 +26,7 @@ Comment line 279 in `/System/Library/Frameworks/Python.framework/Versions/2.7/li
 
 PS: The `__init__.py` file is system read-only file, and you need to run command `csrutil disable` in mac recovery mode (press `command+R` when booting up)
 
-### 2. powerline on zsh broke after using for a while 
+### 2. powerline on zsh broke after using for a while
 
 Not yet figure out a proper solution...
 

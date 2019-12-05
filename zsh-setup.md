@@ -2,12 +2,13 @@
 
 ## 1. Install zsh and oh-my-zsh
 
-### 1.1. Install zsh:
+### 1.1. Install zsh
+
 `brew install zsh`
 
-### 1.2. Install oh-my-zsh:
+### 1.2. Install oh-my-zsh
 
-```
+```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
@@ -23,13 +24,13 @@ eg. `ZSH_THEME="agnoster"`
 
 ### 2.2. Remove device name & user name
 
-加入 `export DEFAULT_USER=$USER` 
+加入 `export DEFAULT_USER=$USER`
 
 ### 2.3. add PATH
 
 Copy the PATH from bash shell, my settings for example:
 
-```
+```shell
 /Library/Frameworks/Python.framework/Versions/3.6/bin:/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 ```
 
@@ -37,6 +38,6 @@ Copy the PATH from bash shell, my settings for example:
 
 move aliases to a file name `.aliases` and then source the file:
 
-```
+```shell
 source ~/.aliases
 ```

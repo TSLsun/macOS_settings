@@ -1,28 +1,31 @@
 # vim-setting
+
 some note on setting vim on Mac terminal
 
-Quick setup without plugins (using wget): 
-```    
+Quick setup without plugins (using wget):
+
+```shell
 mkdir .vim
 mkdir .vim/colors
 wget -O .vimrc https://raw.githubusercontent.com/TSLsun/dotfiles/master/vim/plain.vimrc
 wget -O .vim/colors/Tomorrow-Night-Bright.vim https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night-Bright.vim
-```    
+```
 
 ## .vimrc
 
 [my vim dotfiles](https://github.com/TSLsun/dotfiles/tree/master/vim)
 
-## .vim/colors/...
+## .vim/colors/
 
 [Tomorrow-Night-Bright.vim](https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Bright.vim)
 
-## Plugins:
+## Plugins
 
-#### 1. [vundle](https://github.com/VundleVim/Vundle.vim) as plugin manger
+### 1. [vundle](https://github.com/VundleVim/Vundle.vim) as plugin manger
 
 Set up vundle:
-```
+
+```shell
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
@@ -30,19 +33,20 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 run `:PluginInstall` to install plugins
 
-#### 2. [YouCompleteMe](http://valloric.github.io/YouCompleteMe/#mac-os-x) for code autocompletion 
+### 2. [YouCompleteMe](http://valloric.github.io/YouCompleteMe/#mac-os-x) for code autocompletion
 
 Install CMake
 
 Compiling YCM with semantic support for C-family languages:
 
-```
+```shell
 cd ~/.vim/bundle/YouCompleteMe
 /usr/local/Cellar/python/3.7.1/bin/python3 ./install.py --clang-completer
 ```
 
 Setup in .vimrc:
-```
+
+```shell
 " YouCompleteMe settings"
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
@@ -56,7 +60,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 ```
 
-#### 3. [fzf](https://github.com/junegunn/fzf) look for files to open
+### 3. [fzf](https://github.com/junegunn/fzf) look for files to open
 
 `:FZF` look for files under current folder
 
@@ -66,10 +70,11 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 `Ctrl-T`, `Ctrl-X`, `Ctrl-V` to open files in new tabs, horizontal splits or in vertical splits.
 
-#### 4. [nerdtree](https://github.com/scrooloose/nerdtree) a tree explorer plugin for vim
+### 4. [nerdtree](https://github.com/scrooloose/nerdtree) a tree explorer plugin for vim
 
 Setup in .vimrc:
-```
+
+```vimrc
 "Open NERDTree with Ctrl-n"
 map <C-n> :NERDTreeToggle<CR>
 
@@ -79,19 +84,20 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "fix to show first letter"
 let NERDTreeNodeDelimiter = "\t"
 ```
-#### 5. [tagbar]( https://github.com/majutsushi/tagbar) show tags
+
+### 5. [tagbar]( https://github.com/majutsushi/tagbar) show tags
 
 Install exuberant ctags
 `brew install ctags-exuberant`
 
-```
+```vimrc
 " tagbar settings"
 " need to installed ctags
 let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 nmap <F8> :TagbarToggle<CR>
 ```
 
-#### 6. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) make comments easier
+### 6. [nerdcommenter](https://github.com/scrooloose/nerdcommenter) make comments easier
 
 `[count]<leader>c<space>` NERDComToggleComment
 
@@ -99,19 +105,19 @@ nmap <F8> :TagbarToggle<CR>
 
 `<leader>cA` Add comment at the end of the line
 
-#### 7. [surround.vim](https://github.com/tpope/vim-surround) to deal with surroundings
+### 7. [surround.vim](https://github.com/tpope/vim-surround) to deal with surroundings
 
 `cs"'` change surroundings from `"` to `'`
 
 `ysiw]` add surroundings `[]` (`iw` is a text object)
 
-`ds{` delete surroundings `{}` 
+`ds{` delete surroundings `{}`
 
-#### 8. [repeat.vim](https://github.com/tpope/vim-repeat) `.` works for surround.vim
+### 8. [repeat.vim](https://github.com/tpope/vim-repeat) `.` works for surround.vim
 
-#### 9. [indentLine](https://github.com/Yggdroot/indentLine) `.` to show indentLine
+### 9. [indentLine](https://github.com/Yggdroot/indentLine) `.` to show indentLine
 
-#### 10. Plugins for Markdown support and preview:
+### 10. Plugins for Markdown support and preview
 
 [tabular](https://github.com/godlygeek/tabular)
 
@@ -119,12 +125,10 @@ nmap <F8> :TagbarToggle<CR>
 
 [markdown-preview](https://github.com/iamcco/markdown-preview.vim)
 
-
-
 ---
-#### To try list:
+
+#### To try list
 
 [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
 
 [fugitive](https://github.com/tpope/vim-fugitive)
-
