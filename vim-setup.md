@@ -29,7 +29,7 @@ Set up vundle:
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-`so %` to source `.vimrc` after adding new plugins 
+`so %` to source `.vimrc` after adding new plugins
 
 run `:PluginInstall` to install plugins
 
@@ -64,7 +64,7 @@ map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 `:FZF` look for files under current folder
 
-`:FZF ~` look for files under home directory 
+`:FZF ~` look for files under home directory
 
 `:FZF!` starts fzf in fullscreen mode
 
