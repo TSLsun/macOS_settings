@@ -83,11 +83,21 @@ antigen theme romkatv/powerlevel10k
     export DEFAULT_USER=$USER
     ```
 
-* powerlevel10k customize prompt
+* Customize powerlevel10k prompt
 
     ```zsh
     # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+    ```
+
+* Install `nerd-font` to show all kinds of **icons** ([official instructions](https://github.com/ryanoasis/nerd-fonts#font-installation))
+
+    For macOS (install hack):
+
+    ```zsh
+    brew tap homebrew/cask-fonts
+    # install `Hack` for example
+    brew cask install font-hack-nerd-font
     ```
 
 ### 2.3. add PATH
@@ -112,8 +122,22 @@ source ~/.aliases
 
 ### 2.6. more plugins
 
-```zsh
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
-```
+* some useful plugins from `zsh-users` repo
+
+    ```zsh
+    antigen bundle zsh-users/zsh-completions
+    antigen bundle zsh-users/zsh-autosuggestions
+    antigen bundle zsh-users/zsh-syntax-highlighting
+    ```
+
+* `autojump` installed by brew
+
+    ```zsh
+    brew install autojump
+    ```
+
+    then add to zshrc:  
+
+    ```zsh
+    antigen bundle autojump
+    ```
