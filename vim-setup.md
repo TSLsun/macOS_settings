@@ -119,9 +119,9 @@ nmap <F8> :TagbarToggle<CR>
 
 ### 10. Plugins for Markdown support and preview
 
-[tabular](https://github.com/godlygeek/tabular)
+<!--[tabular](https://github.com/godlygeek/tabular)-->
 
-[vim-markdown](https://github.com/plasticboy/vim-markdown)
+<!--[vim-markdown](https://github.com/plasticboy/vim-markdown)-->
 
 [markdown-preview](https://github.com/iamcco/markdown-preview.vim)
 
