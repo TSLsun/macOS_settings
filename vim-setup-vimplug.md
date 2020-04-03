@@ -23,7 +23,7 @@ wget -O .vim/colors/Tomorrow-Night-Bright.vim https://raw.githubusercontent.com/
 
 ### 1. [vim-plug](https://github.com/junegunn/vim-plug) as plugin manger
 
-Set up vundle:
+Set up vim-plug:
 
 ```shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
